@@ -1,0 +1,414 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Tinh hoa Hải Phòng - Hải Dương</title>
+  <!-- Bootstrap CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Swiper (slider) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <style>
+    :root{
+      --primary-red: #d62828; /* hoa phượng */
+      --primary-green: #2a9d8f; /* màu xanh đồng */
+      --accent: #023047;
+    }
+    body{font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;}
+    header.navbar{background: linear-gradient(90deg, rgba(214,40,40,0.95), rgba(42,157,143,0.95));}
+    .brand{font-weight:700;color:white}
+    .hero-title{color:white;text-shadow:0 2px 8px rgba(0,0,0,0.45)}
+    .card-hover:hover{transform:translateY(-6px);box-shadow:0 8px 24px rgba(0,0,0,0.12);}
+    .tag-region{font-weight:600;padding:.15rem .6rem;border-radius:20px;font-size:.85rem}
+    footer{background:#0b1320;color:#cbd5e1;padding:2rem 0}
+    .map-embed{width:100%;height:320px;border:0}
+    /* responsive tweaks */
+    @media (max-width:576px){
+      .hero-title{font-size:1.6rem}
+    }
+  </style>
+</head>
+<body>
+
+<!-- Header -->
+<header class="navbar navbar-expand-lg sticky-top">
+  <div class="container">
+    <a class="navbar-brand brand" href="#">Tinh hoa <span style="opacity:.95">HP & HD</span></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto text-white">
+        <li class="nav-item"><a class="nav-link text-white" href="#home">Trang chủ</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#destinations">Điểm đến</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#culture">Văn hóa & Con người</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#food">Ẩm thực</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#events">Sự kiện</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#contact">Liên hệ</a></li>
+      </ul>
+    </div>
+  </div>
+</header>
+
+<!-- MAIN -->
+<main>
+  <!-- HERO / Slider -->
+  <section id="home" class="py-4">
+    <div class="container">
+      <!-- Swiper -->
+      <div class="swiper mySwiper rounded-3 overflow-hidden" data-aos="fade-up">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide" style="background:url('https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?auto=format&fit=crop&w=1500&q=60') center/cover;height:420px;display:flex;align-items:center;">
+            <div class="container text-white">
+              <h1 class="hero-title display-5">Tinh hoa Hải Phòng - Hải Dương</h1>
+              <p class="lead">Giao hòa giữa biển cả sôi động và đồng bằng truyền thống.</p>
+            </div>
+          </div>
+          <div class="swiper-slide" style="background:url('images/daocatba.jpg') center/cover;height:420px;display:flex;align-items:center;">
+            <div class="container text-white">
+              <h1 class="hero-title display-5">Cát Bà • Đồ Sơn • Côn Sơn</h1>
+              <p class="lead">Từ đảo xanh đến di tích lịch sử — một vùng đất để trải nghiệm.</p>
+            </div>
+          </div>
+          <div class="swiper-slide" style="background:url('images/HP.png') center/cover;height:420px;display:flex;align-items:center;">
+            <div class="container text-white">
+              <h1 class="hero-title display-5">Ẩm thực & Làng nghề</h1>
+              <p class="lead">Bánh đa cua, bánh đậu xanh, gốm Chu Đậu — hương vị và truyền thống.</p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+
+      <!-- Quick cards -->
+      <div class="row mt-4">
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="50">
+          <div class="card p-3 h-100 card-hover">
+            <div class="d-flex align-items-start gap-3">
+              <div style="width:64px;height:64px;background:var(--primary-red);border-radius:12px;"></div>
+              <div>
+                <h5>Thiên nhiên & Di sản</h5>
+                <p class="mb-0">Vịnh, đảo, di tích lịch sử và khu bảo tồn.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="120">
+          <div class="card p-3 h-100 card-hover">
+            <div class="d-flex align-items-start gap-3">
+              <div style="width:64px;height:64px;background:var(--primary-green);border-radius:12px;"></div>
+              <div>
+                <h5>Văn hóa & Làng nghề</h5>
+                <p class="mb-0">Lễ hội, làng gốm Chu Đậu, nghề truyền thống.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="190">
+          <div class="card p-3 h-100 card-hover">
+            <div class="d-flex align-items-start gap-3">
+              <div style="width:64px;height:64px;background:var(--accent);border-radius:12px;"></div>
+              <div>
+                <h5>Ẩm thực & Trải nghiệm</h5>
+                <p class="mb-0">Món ngon địa phương, chợ ẩm thực và homestay địa phương.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- DESTINATIONS -->
+  <section id="destinations" class="py-5 bg-light">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-center mb-4">
+        <h2 data-aos="fade-right">Điểm đến nổi bật</h2>
+        <div>
+          <span class="badge bg-danger tag-region">Hải Phòng</span>
+          <span class="badge bg-success tag-region">Hải Dương</span>
+        </div>
+      </div>
+
+      <div class="row" id="destGrid"></div>
+
+    </div>
+  </section>
+
+  <!-- CULTURE -->
+  <section id="culture" class="py-5">
+    <div class="container">
+      <h2 data-aos="fade-up">Văn hóa & Con người</h2>
+      <p data-aos="fade-up" data-aos-delay="80">Người Hải Phòng mạnh mẽ, phóng khoáng; người Hải Dương hiền hòa, cần cù. Sự hòa quyện tạo nên bản sắc vùng miền độc đáo.</p>
+
+      <div class="row mt-4">
+        <div class="col-md-6" data-aos="fade-up">
+          <div class="card p-3">
+            <h5>Lễ hội tiêu biểu</h5>
+            <ul>
+              <li><strong>Hoa Phượng Đỏ</strong> (Hải Phòng) — diễu hành, âm nhạc, pháo hoa.</li>
+              <li><strong>Côn Sơn - Kiếp Bạc</strong> (Hải Dương) — lễ tế, tưởng niệm, văn hóa truyền thống.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-6" data-aos="fade-up" data-aos-delay="80">
+          <div class="card p-3">
+            <h5>Làng nghề & Nghệ thuật</h5>
+            <p>Làng gốm Chu Đậu, nghề đúc đồng, nghề làm bánh truyền thống, và các làng nghề nông nghiệp đem đến sản phẩm thủ công đặc sắc.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mt-4">
+        <div class="col-md-4" data-aos="zoom-in">
+          <img src="images/langchai.jpg" alt="people" class="img-fluid rounded">
+        </div>
+        <div class="col-md-8" data-aos="fade-left">
+          <blockquote class="blockquote">
+            <p class="mb-0">"Người dân nơi đây luôn nhiệt thành, mến khách — từ chợ cá ven sông đến những làng nghề cổ truyền."</p>
+          </blockquote>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOD -->
+  <section id="food" class="py-5 bg-light">
+    <div class="container">
+      <h2 data-aos="fade-up">Ẩm thực đặc trưng</h2>
+      <div class="row mt-3" id="foodGrid"></div>
+    </div>
+  </section>
+
+  <!-- EVENTS -->
+  <section id="events" class="py-5">
+    <div class="container">
+      <h2 data-aos="fade-up">Sự kiện & Lễ hội</h2>
+      <div id="eventsList" class="mt-4"></div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="py-5 bg-light">
+    <div class="container">
+      <h2 data-aos="fade-up">Liên hệ & Góp ý</h2>
+      <div class="row mt-3">
+        <div class="col-md-6" data-aos="fade-right">
+          <form id="contactForm">
+            <div class="mb-3">
+              <label class="form-label">Họ và tên</label>
+              <input required class="form-control" id="c-name" placeholder="Nguyễn A">
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Email</label>
+              <input required class="form-control" id="c-email" type="email" placeholder="email@domain.com">
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Nội dung</label>
+              <textarea required class="form-control" id="c-msg" rows="4"></textarea>
+            </div>
+            <button class="btn btn-primary" type="submit">Gửi góp ý</button>
+          </form>
+        </div>
+        <div class="col-md-6" data-aos="fade-left">
+          <h5>Thông tin liên hệ</h5>
+          <p>Phạm Xuân Thắng - Lớp K14CNTT.L</p>
+          <div class="mt-3">
+            <iframe class="map-embed" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.9302067770695!2d106.67614031438479!3d20.84439858601021!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ac8f0f1f1ef3%3A0x8a8e6a6f3b2f9b6e!2sHai%20Phong!5e0!3m2!1svi!2s!4v1697040000000" loading="lazy"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- Footer -->
+<footer>
+  <div class="container text-center">
+    <p class="mb-1">© 2025 Khám phá Hải Phòng - Hải Dương — Demo project for coursework</p>
+    <p class="mb-0">Thực hiện: Sinh viên Phạm Xuân Thắng - Lớp K14CNTT.LT</p>
+  </div>
+</footer>
+
+<!-- Destination Detail Modal -->
+<div class="modal fade" id="detailModal" tabindex="-1">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="detailTitle"></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <img id="detailImg" src="" class="img-fluid mb-3 rounded">
+        <p id="detailDesc"></p>
+        <div id="detailMap"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Required scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+<script>
+// ====== Demo data (tĩnh) ======
+const data = {
+  destinations: [
+    {
+      id: 'catba', region:'HP', title: 'Đảo Cát Bà',
+      image: 'images/daocatba.jpg',
+      short: 'Khu dự trữ sinh quyển thế giới với cảnh quan vịnh đảo tuyệt đẹp.',
+      desc: 'Cát Bà nổi tiếng với đảo, vườn quốc gia, hang động và hoạt động du lịch biển. Thích hợp cho đi thuyền, leo núi, và khám phá thiên nhiên.',
+      mapEmbed: '<iframe class="map-embed" src="https://www.google.com/maps?q=Cat+Ba&output=embed"></iframe>'
+    },
+    {
+      id: 'doson', region:'HP', title: 'Bãi biển Đồ Sơn',
+      image: 'images/doson.jpg',
+      short: 'Bãi biển truyền thống, nơi nghỉ mát của người Hải Phòng.',
+      desc: 'Đồ Sơn có bãi tắm, các khu trải nghiệm và lễ hội biển vào mùa hè.',
+      mapEmbed: '<iframe class="map-embed" src="https://www.google.com/maps?q=Do+Son+Hai+Phong&output=embed"></iframe>'
+    },
+    {
+      id: 'nhatruoc', region:'HP', title: 'Nhà hát lớn Hải Phòng',
+      image: 'images/nhahatlon.jpg',
+      short: 'Kiến trúc Pháp cổ nằm ở trung tâm thành phố.',
+      desc: 'Nhà hát lớn là biểu tượng văn hóa, nơi thường xuyên có sự kiện nghệ thuật vá lễ hội đô thị.',
+      mapEmbed: '<iframe class="map-embed" src="https://www.google.com/maps?q=Hai+Phong+Opera+House&output=embed"></iframe>'
+    },
+    {
+      id: 'conson', region:'HD', title: 'Khu di tích Côn Sơn - Kiếp Bạc',
+      image: 'images/conson.png',
+      short: 'Di tích lịch sử gắn liền với Nguyễn Trãi và Trần Hưng Đạo.',
+      desc: 'Côn Sơn – Kiếp Bạc là địa danh tâm linh, có đền, chùa, và nhiều di tích lịch sử.',
+      mapEmbed: '<iframe class="map-embed" src="https://www.google.com/maps?q=Con+Son+Kiep+Bac&output=embed"></iframe>'
+    },
+    {
+      id: 'chudaud', region:'HD', title: 'Làng gốm Chu Đậu',
+      image: 'images/gomchudau.jpg',
+      short: 'Làng gốm cổ nổi tiếng với sản phẩm truyền thống.',
+      desc: 'Chu Đậu là một trung tâm gốm truyền thống, nơi lưu giữ kỹ thuật chế tác dân gian hàng trăm năm.',
+      mapEmbed: '<iframe class="map-embed" src="https://www.google.com/maps?q=Chu+Dau+village&output=embed"></iframe>'
+    }
+  ],
+  foods: [
+    {id:'banhdacua', title:'Bánh đa cua', region:'HP', image:'images/banhdacua.jpg', desc:'Món đặc sản Hải Phòng với bún/bánh đa, nước dùng đậm đà từ cua.'},
+    {id:'bandaung', title:'Bánh đậu xanh', region:'HD', image:'images/banhdauxanh.jfif', desc:'Bánh đậu xanh Hải Dương nổi tiếng, thường là quà đặc sản.'},
+    {id:'nemcuabe', title:'Nem cua bể', region:'HP', image:'images/nemcuabe.jpeg', desc:'Nem làm từ cua bể, giòn rụm, ăn kèm rau sống.'},
+    {id:'ruoituqky', title:'Rươi Tứ Kỳ', region:'HD', image:'images/charuoi.jpg', desc:'Món rươi đặc sản của vùng Tứ Kỳ, Hải Dương.'}
+  ],
+  events: [
+    {month:'5', title:'Lễ hội Hoa Phượng Đỏ', place:'Hải Phòng', desc:'Diễn ra vào mùa hè, có diễu hành và chương trình nghệ thuật.'},
+    {month:'4', title:'Lễ hội Côn Sơn - Kiếp Bạc', place:'Hải Dương', desc:'Sự kiện văn hóa tâm linh tưởng nhớ các nhân vật lịch sử.'},
+    {month:'10', title:'Ngày hội làng gốm Chu Đậu', place:'Hải Dương', desc:'Trưng bày sản phẩm, trình diễn nghề gốm.'}
+  ]
+};
+
+// ====== Render functions ======
+function renderDestinations(){
+  const grid = document.getElementById('destGrid');
+  grid.innerHTML = '';
+  data.destinations.forEach(d => {
+    const col = document.createElement('div');
+    col.className = 'col-md-4 mb-4';
+    col.innerHTML = `
+      <div class="card h-100 card-hover">
+        <img src="${d.image}" class="card-img-top" style="height:200px;object-fit:cover">
+        <div class="card-body">
+          <div class="d-flex justify-content-between align-items-start">
+            <h5 class="card-title">${d.title}</h5>
+            <span class="badge ${d.region==='HP' ? 'bg-danger' : 'bg-success'}">${d.region==='HP'? 'Hải Phòng': 'Hải Dương'}</span>
+          </div>
+          <p class="card-text">${d.short}</p>
+          <button class="btn btn-outline-primary btn-sm" onclick="openDetail('${d.id}')">Chi tiết</button>
+        </div>
+      </div>
+    `;
+    grid.appendChild(col);
+  });
+}
+
+function openDetail(id){
+  const item = data.destinations.find(x=>x.id===id);
+  if(!item) return;
+  document.getElementById('detailTitle').innerText = item.title;
+  document.getElementById('detailImg').src = item.image;
+  document.getElementById('detailDesc').innerText = item.desc;
+  document.getElementById('detailMap').innerHTML = item.mapEmbed;
+  const modal = new bootstrap.Modal(document.getElementById('detailModal'));
+  modal.show();
+}
+
+function renderFoods(){
+  const grid = document.getElementById('foodGrid');
+  grid.innerHTML = '';
+  data.foods.forEach(f=>{
+    const col = document.createElement('div');
+    col.className = 'col-md-3 mb-4';
+    col.innerHTML = `
+      <div class="card h-100 card-hover">
+        <img src="${f.image}" class="card-img-top" style="height:160px;object-fit:cover">
+        <div class="card-body">
+          <h6 class="card-title">${f.title}</h6>
+          <p class="card-text small">${f.desc}</p>
+          <span class="badge ${f.region==='HP'?'bg-danger':'bg-success'}">${f.region==='HP'?'Hải Phòng':'Hải Dương'}</span>
+        </div>
+      </div>
+    `;
+    grid.appendChild(col);
+  });
+}
+
+function renderEvents(){
+  const box = document.getElementById('eventsList');
+  box.innerHTML = '';
+  data.events.forEach(e=>{
+    const item = document.createElement('div');
+    item.className = 'card mb-3';
+    item.innerHTML = `
+      <div class="card-body d-flex justify-content-between align-items-start">
+        <div>
+          <h5>${e.title} <small class="text-muted">(${e.place})</small></h5>
+          <p class="mb-0">${e.desc}</p>
+        </div>
+        <div class="text-end">
+          <div class="badge bg-info text-dark">Tháng ${e.month}</div>
+        </div>
+      </div>
+    `;
+    box.appendChild(item);
+  });
+}
+
+// Contact form
+document.getElementById('contactForm').addEventListener('submit', function(ev){
+  ev.preventDefault();
+  const name = document.getElementById('c-name').value.trim();
+  const email = document.getElementById('c-email').value.trim();
+  const msg = document.getElementById('c-msg').value.trim();
+  if(!name || !email || !msg){
+    alert('Vui lòng điền đầy đủ thông tin.');
+    return;
+  }
+  // No backend: demo feedback
+  alert('Cảm ơn ' + name + '! Phản hồi của bạn đã được gửi. (Demo — không lưu server)');
+  this.reset();
+});
+
+// Initialize swiper & animations & render
+window.addEventListener('DOMContentLoaded', ()=>{
+  // Swiper
+  const swiper = new Swiper('.mySwiper', {pagination:{el:'.swiper-pagination',clickable:true},autoplay:{delay:3500},loop:true});
+  AOS.init({duration:700, once:true});
+  renderDestinations();
+  renderFoods();
+  renderEvents();
+});
+</script>
+</body>
+</html>
